@@ -1,0 +1,3 @@
+[console_scripts]
+simple_bag_recorder = navigation_testing.simple_bag_recorder:main
+
