@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/navigation_testing/navigation_testing.egg-info/PKG-INFO
+writing dependency_links to ../../build/navigation_testing/navigation_testing.egg-info/dependency_links.txt
+writing entry points to ../../build/navigation_testing/navigation_testing.egg-info/entry_points.txt
+writing requirements to ../../build/navigation_testing/navigation_testing.egg-info/requires.txt
+writing top-level names to ../../build/navigation_testing/navigation_testing.egg-info/top_level.txt
+reading manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+writing manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+running build
+running build_py
+copying navigation_testing/simple_bag_recorder_lidar.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+copying navigation_testing/simple_bag_recorder_vel.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+copying navigation_testing/bag_recorder_full.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+running install
+running install_lib
+copying /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing/simple_bag_recorder_lidar.py -> /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing
+copying /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing/simple_bag_recorder_vel.py -> /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing
+copying /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing/bag_recorder_full.py -> /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing
+byte-compiling /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing/simple_bag_recorder_lidar.py to simple_bag_recorder_lidar.cpython-310.pyc
+byte-compiling /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing/simple_bag_recorder_vel.py to simple_bag_recorder_vel.cpython-310.pyc
+byte-compiling /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing/bag_recorder_full.py to bag_recorder_full.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/navigation_testing/navigation_testing.egg-info to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info
+running install_scripts
+Installing simple_bag_recorder_lidar script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+Installing simple_bag_recorder_vel script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+writing list of installed files to '/home/filipe/ros2_selfdriving/build/navigation_testing/install.log'

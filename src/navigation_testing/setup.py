@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'simple_bag_recorder = navigation_testing.simple_bag_recorder:main',
+            'simple_bag_recorder_vel = navigation_testing.simple_bag_recorder_vel:main',
+            'simple_bag_recorder_lidar = navigation_testing.simple_bag_recorder_lidar:main',
+            'bag_recorder_full = navigation_testing.bag_recorder_full:main',
         ],
     },
 )
