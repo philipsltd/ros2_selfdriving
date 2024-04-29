@@ -34,7 +34,7 @@ class Nav_Prediction(Node):
 
     def lidar_callback(self, msg):
         # Process LiDAR data (extract X, Y, Z and potentially preprocess)
-        lidar_data = msg # TODO - Your logic to extract and process relevant data from PointCloud2
+        lidar_data = msg.data # TODO - Your logic to extract and process relevant data from PointCloud2
 
         # Predict velocity using the model
         predicted_velocity = self.predict_velocity(lidar_data)
@@ -45,11 +45,11 @@ class Nav_Prediction(Node):
 
     def predict_velocity(self, lidar_data):
         # Process the LiDAR data (reshape if necessary)
-        processed_data = lidar_data # TODO - Your logic to reshape data for model prediction
-            
+        processed_data = lidar_data.data # TODO - Your logic to reshape data for model prediction
+
         # Predict velocity using the model
         predicted_velocity = self.model.predict(processed_data)
-        
+
         # Create a Twist message and set predicted values
         twist_msg = Twist()
         twist_msg.linear.x = predicted_velocity[0]
