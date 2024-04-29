@@ -9,7 +9,7 @@ import rosbag2_py
 
 class SimpleBagRecorder(Node):
     def __init__(self, desired_bag_name):
-        super().__init__('simple_bag_recorder')
+        super().__init__('bag_recorder_full')
         self.writer = rosbag2_py.SequentialWriter()
 
         storage_options = rosbag2_py._storage.StorageOptions(
