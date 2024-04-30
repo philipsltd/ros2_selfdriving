@@ -18,7 +18,7 @@ class SimpleBagRecorder(Node):
 
         topic_info = rosbag2_py._storage.TopicMetadata(
             name=desired_topic,
-            type='sensor_msgs/msg/LaserScan',  # Use PointCloud2 message type
+            type='sensor_msgs/msg/PointCloud2',  # Use PointCloud2 message type
             serialization_format='cdr')
         self.writer.create_topic(topic_info)
 
