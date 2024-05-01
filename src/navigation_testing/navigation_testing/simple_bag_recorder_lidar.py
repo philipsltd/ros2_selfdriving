@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.serialization import serialize_message
-from sensor_msgs.msg import PointCloud2  # Import PointCloud2 message
+from sensor_msgs.msg import PointCloud2, LaserScan  # Import PointCloud2 message
 
 import rosbag2_py
 
@@ -18,12 +18,12 @@ class SimpleBagRecorder(Node):
 
         topic_info = rosbag2_py._storage.TopicMetadata(
             name=desired_topic,
-            type='sensor_msgs/msg/PointCloud2',  # Use PointCloud2 message type
+            type='sensor_msgs/msg/LaserScan',  # Use PointCloud2 message type
             serialization_format='cdr')
         self.writer.create_topic(topic_info)
 
         self.subscription = self.create_subscription(
-            PointCloud2,  # Use PointCloud2 message type for subscription
+            LaserScan,  # Use PointCloud2 message type for subscription
             desired_topic,
             self.topic_callback,
             10)
@@ -31,7 +31,7 @@ class SimpleBagRecorder(Node):
 
     def topic_callback(self, msg):
         # Ensure message type matches (optional, can be removed)
-        if isinstance(msg, PointCloud2):
+        if isinstance(msg, LaserScan):
             serialized_message = serialize_message(msg)
             self.writer.write(
                 self.subscription.topic_name,  # Use subscription topic name

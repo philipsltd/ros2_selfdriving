@@ -1,0 +1,26 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 34250384067
+  starting_time:
+    nanoseconds_since_epoch: 1714329178881610974
+  message_count: 677
+  topics_with_message_count:
+    - topic_metadata:
+        name: /cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 677
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - speed_0.db3
+  files:
+    - path: speed_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1714329178881610974
+      duration:
+        nanoseconds: 34250384067
+      message_count: 677

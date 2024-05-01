@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.serialization import serialize_message
-from sensor_msgs.msg import PointCloud2  # Import PointCloud2 message
+from sensor_msgs.msg import PointCloud2, LaserScan
 from geometry_msgs.msg import Twist  # Import geometry_msgs.msg.Twist
 
 import rosbag2_py
@@ -9,7 +9,7 @@ import rosbag2_py
 
 class SimpleBagRecorder(Node):
     def __init__(self, desired_bag_name):
-        super().__init__('simple_bag_recorder')
+        super().__init__('bag_recorder_full')
         self.writer = rosbag2_py.SequentialWriter()
 
         storage_options = rosbag2_py._storage.StorageOptions(
@@ -21,7 +21,7 @@ class SimpleBagRecorder(Node):
         # Topic metadata for LiDAR data (assuming PointCloud2)
         lidar_topic_info = rosbag2_py._storage.TopicMetadata(
             name='/scan',  # Replace with your actual LiDAR topic name
-            type='sensor_msgs/msg/PointCloud2',
+            type='sensor_msgs/msg/LaserScan',
             serialization_format='cdr')
 
         # Topic metadata for cmd_vel
@@ -34,7 +34,7 @@ class SimpleBagRecorder(Node):
         self.writer.create_topic(cmd_vel_topic_info)
 
         self.lidar_subscription = self.create_subscription(
-            PointCloud2,
+            LaserScan,
             '/scan',  # Replace with your actual LiDAR topic name
             self.lidar_callback,
             10)

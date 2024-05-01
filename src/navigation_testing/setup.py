@@ -23,6 +23,7 @@ setup(
             'simple_bag_recorder_vel = navigation_testing.simple_bag_recorder_vel:main',
             'simple_bag_recorder_lidar = navigation_testing.simple_bag_recorder_lidar:main',
             'bag_recorder_full = navigation_testing.bag_recorder_full:main',
+            'predict_nav = navigation_testing.predict_nav:main',
         ],
     },
 )
