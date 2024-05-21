@@ -1,0 +1,49 @@
+[0.935s] Invoking command in '/home/filipe/ros2_selfdriving/src/ros2bag_convert': PYTHONPATH=/home/filipe/ros2_selfdriving/build/ros2bags/prefix_override:/home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2bags build --build-base /home/filipe/ros2_selfdriving/build/ros2bags/build install --record /home/filipe/ros2_selfdriving/build/ros2bags/install.log --single-version-externally-managed
+[1.138s] running egg_info
+[1.138s] creating ../../build/ros2bags/ros2bag_convert.egg-info
+[1.153s] writing ../../build/ros2bags/ros2bag_convert.egg-info/PKG-INFO
+[1.154s] writing dependency_links to ../../build/ros2bags/ros2bag_convert.egg-info/dependency_links.txt
+[1.154s] writing entry points to ../../build/ros2bags/ros2bag_convert.egg-info/entry_points.txt
+[1.154s] writing requirements to ../../build/ros2bags/ros2bag_convert.egg-info/requires.txt
+[1.154s] writing top-level names to ../../build/ros2bags/ros2bag_convert.egg-info/top_level.txt
+[1.154s] writing manifest file '../../build/ros2bags/ros2bag_convert.egg-info/SOURCES.txt'
+[1.186s] reading manifest file '../../build/ros2bags/ros2bag_convert.egg-info/SOURCES.txt'
+[1.186s] adding license file 'LICENSE'
+[1.187s] writing manifest file '../../build/ros2bags/ros2bag_convert.egg-info/SOURCES.txt'
+[1.187s] running build
+[1.187s] running build_py
+[1.187s] creating /home/filipe/ros2_selfdriving/build/ros2bags/build
+[1.187s] creating /home/filipe/ros2_selfdriving/build/ros2bags/build/lib
+[1.187s] creating /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert
+[1.187s] creating /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.187s] copying ros2bag_convert/ros2bag_convert/__init__.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.187s] copying ros2bag_convert/ros2bag_convert/read_bag.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.188s] copying ros2bag_convert/ros2bag_convert/save_csv_file.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.188s] copying ros2bag_convert/ros2bag_convert/message_converter.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.188s] copying ros2bag_convert/ros2bag_convert/json_message_converter.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert
+[1.188s] copying ros2bag_convert/__init__.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert
+[1.188s] copying ros2bag_convert/main.py -> /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert
+[1.188s] running install
+[1.192s] running install_lib
+[1.208s] creating /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert
+[1.209s] creating /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert/__init__.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert/read_bag.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert/save_csv_file.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert/message_converter.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/ros2bag_convert/json_message_converter.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/__init__.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert
+[1.209s] copying /home/filipe/ros2_selfdriving/build/ros2bags/build/lib/ros2bag_convert/main.py -> /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert
+[1.210s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert/__init__.py to __init__.cpython-310.pyc
+[1.210s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert/read_bag.py to read_bag.cpython-310.pyc
+[1.211s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert/save_csv_file.py to save_csv_file.cpython-310.pyc
+[1.212s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert/message_converter.py to message_converter.cpython-310.pyc
+[1.213s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/ros2bag_convert/json_message_converter.py to json_message_converter.cpython-310.pyc
+[1.213s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/__init__.py to __init__.cpython-310.pyc
+[1.213s] byte-compiling /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert/main.py to main.cpython-310.pyc
+[1.213s] running install_egg_info
+[1.230s] Copying ../../build/ros2bags/ros2bag_convert.egg-info to /home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert-0.1.0-py3.10.egg-info
+[1.231s] running install_scripts
+[1.360s] Installing ros2bag-convert script to /home/filipe/ros2_selfdriving/install/ros2bags/lib/ros2bag_convert
+[1.360s] writing list of installed files to '/home/filipe/ros2_selfdriving/build/ros2bags/install.log'
+[1.391s] Invoked command in '/home/filipe/ros2_selfdriving/src/ros2bag_convert' returned '0': PYTHONPATH=/home/filipe/ros2_selfdriving/build/ros2bags/prefix_override:/home/filipe/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2bags build --build-base /home/filipe/ros2_selfdriving/build/ros2bags/build install --record /home/filipe/ros2_selfdriving/build/ros2bags/install.log --single-version-externally-managed

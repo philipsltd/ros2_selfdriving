@@ -1,0 +1,31 @@
+[0.565s] Invoking command in '/home/filipe/ros2_selfdriving/src/navigation_testing': PYTHONPATH=/home/filipe/ros2_selfdriving/build/navigation_testing/prefix_override:/home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation_testing build --build-base /home/filipe/ros2_selfdriving/build/navigation_testing/build install --record /home/filipe/ros2_selfdriving/build/navigation_testing/install.log --single-version-externally-managed install_data
+[0.748s] running egg_info
+[0.760s] writing ../../build/navigation_testing/navigation_testing.egg-info/PKG-INFO
+[0.760s] writing dependency_links to ../../build/navigation_testing/navigation_testing.egg-info/dependency_links.txt
+[0.761s] writing entry points to ../../build/navigation_testing/navigation_testing.egg-info/entry_points.txt
+[0.761s] writing requirements to ../../build/navigation_testing/navigation_testing.egg-info/requires.txt
+[0.761s] writing top-level names to ../../build/navigation_testing/navigation_testing.egg-info/top_level.txt
+[0.785s] reading manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+[0.786s] writing manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+[0.786s] running build
+[0.786s] running build_py
+[0.786s] copying navigation_testing/__init__.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[0.786s] copying navigation_testing/simple_bag_recorder_vel.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[0.786s] copying navigation_testing/bag_recorder_full.py -> /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[0.787s] running install
+[0.791s] running install_lib
+[0.803s] copying /home/filipe/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing/bag_recorder_full.py -> /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing
+[0.803s] byte-compiling /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing/bag_recorder_full.py to bag_recorder_full.cpython-310.pyc
+[0.804s] running install_data
+[0.804s] copying resource/navigation_testing -> /home/filipe/ros2_selfdriving/install/navigation_testing/share/ament_index/resource_index/packages
+[0.804s] copying package.xml -> /home/filipe/ros2_selfdriving/install/navigation_testing/share/navigation_testing
+[0.804s] running install_egg_info
+[0.817s] removing '/home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info' (and everything under it)
+[0.817s] Copying ../../build/navigation_testing/navigation_testing.egg-info to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info
+[0.818s] running install_scripts
+[0.926s] Installing bag_recorder_full script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[0.926s] Installing predict_nav script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[0.927s] Installing simple_bag_recorder_lidar script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[0.927s] Installing simple_bag_recorder_vel script to /home/filipe/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[0.927s] writing list of installed files to '/home/filipe/ros2_selfdriving/build/navigation_testing/install.log'
+[0.948s] Invoked command in '/home/filipe/ros2_selfdriving/src/navigation_testing' returned '0': PYTHONPATH=/home/filipe/ros2_selfdriving/build/navigation_testing/prefix_override:/home/filipe/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation_testing build --build-base /home/filipe/ros2_selfdriving/build/navigation_testing/build install --record /home/filipe/ros2_selfdriving/build/navigation_testing/install.log --single-version-externally-managed install_data
