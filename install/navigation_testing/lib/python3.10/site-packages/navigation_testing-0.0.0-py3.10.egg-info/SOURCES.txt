@@ -9,6 +9,7 @@ setup.py
 ../../build/navigation_testing/navigation_testing.egg-info/top_level.txt
 ../../build/navigation_testing/navigation_testing.egg-info/zip-safe
 navigation_testing/__init__.py
+navigation_testing/bag_converter.py
 navigation_testing/bag_recorder_full.py
 navigation_testing/predict_nav.py
 navigation_testing/simple_bag_recorder_lidar.py
