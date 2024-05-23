@@ -47,20 +47,27 @@ class SimpleBagRecorder(Node):
         self.last_record_time = self.get_clock().now() # Initial timestamp
 
     def lidar_callback(self, msg):
-        # Check if 200ms has passed since the last recording
-        current_time = self.get_clock().now()
-        if (current_time - self.last_record_time).nanoseconds / 1e9 >= 0.2:  # Check for 200ms interval
-            # Process and write LiDAR data (PointCloud2 message)
-            serialized_message = serialize_message(msg)
-            self.writer.write('/scan',  # Replace with your actual LiDAR topic name
-                            serialized_message,
-                            self.get_clock().now().nanoseconds)  # Use node clock
-            self.last_record_time = current_time
+        # Process and write LiDAR data (PointCloud2 message)
+        serialized_message = serialize_message(msg)
+        self.writer.write('/scan',  # Replace with your actual LiDAR topic name
+                        serialized_message,
+                        self.get_clock().now().nanoseconds)  # Use node clock
+
+    # def lidar_callback(self, msg):
+    #     # Check if 200ms has passed since the last recording
+    #     current_time = self.get_clock().now()
+    #     if (current_time - self.last_record_time).nanoseconds / 1e9 >= 0.2:  # Check for 200ms interval
+    #         # Process and write LiDAR data (PointCloud2 message)
+    #         serialized_message = serialize_message(msg)
+    #         self.writer.write('/scan',  # Replace with your actual LiDAR topic name
+    #                         serialized_message,
+    #                         self.get_clock().now().nanoseconds)  # Use node clock
+    #         self.last_record_time = current_time
 
     def cmd_vel_callback(self, msg):
         # Similar logic for cmd_vel callback
         current_time = self.get_clock().now()
-        if (current_time - self.last_record_time).nanoseconds / 1e9 >= 0.2:
+        if (current_time - self.last_record_time).nanoseconds / 1e9 >= 0.1:
             serialized_message = serialize_message(msg)
             self.writer.write('/cmd_vel',  # Replace with actual topic name if different
                             serialized_message,
