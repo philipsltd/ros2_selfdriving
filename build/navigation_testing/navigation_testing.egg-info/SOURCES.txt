@@ -11,7 +11,8 @@ setup.py
 navigation_testing/__init__.py
 navigation_testing/bag_converter.py
 navigation_testing/bag_recorder_full.py
-navigation_testing/predict_nav.py
+navigation_testing/predict_nav_classifier.py
+navigation_testing/predict_nav_regressor.py
 navigation_testing/simple_bag_recorder_lidar.py
 navigation_testing/simple_bag_recorder_vel.py
 resource/navigation_testing
