@@ -1,0 +1,32 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 988591587713
+  starting_time:
+    nanoseconds_since_epoch: 1716479718432464376
+  message_count: 13700
+  topics_with_message_count:
+    - topic_metadata:
+        name: /cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 7451
+    - topic_metadata:
+        name: /scan
+        type: sensor_msgs/msg/LaserScan
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 6249
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - eight_bag_reframed_0.db3
+  files:
+    - path: eight_bag_reframed_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1716479718432464376
+      duration:
+        nanoseconds: 988591587713
+      message_count: 13700

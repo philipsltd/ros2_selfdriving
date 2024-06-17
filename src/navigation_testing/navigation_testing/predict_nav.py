@@ -2,14 +2,16 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.serialization import serialize_message
-from sensor_msgs.msg import PointCloud2  # Import PointCloud2 message\n",
+from sensor_msgs.msg import LaserScan  # Import PointCloud2 message\n",
 from geometry_msgs.msg import Twist  # Import geometry_msgs.msg.Twist\n",
+from sklearn.preprocessing import LabelEncoder
 
-# ML Imports
+# Regular Imports
 
 import numpy as np
 import pandas as pd
 from joblib import load
+import json
 
 
 class Nav_Prediction(Node):
@@ -18,9 +20,10 @@ class Nav_Prediction(Node):
 
         # Load the model
         self.model = load("src/mlmodels/randomForestModel.joblib")
+        self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
 
         self.lidar_subscription = self.create_subscription(
-            PointCloud2,
+            LaserScan,
             '/scan',  # Replace with your actual LiDAR topic name
             self.lidar_callback,
             10)
@@ -34,30 +37,50 @@ class Nav_Prediction(Node):
 
     def lidar_callback(self, msg):
         # Process LiDAR data (extract X, Y, Z and potentially preprocess)
-        lidar_data = msg.data # TODO - logic to extract and process relevant data from PointCloud2
+        lidar_readings = list(msg.ranges)
+
+        # Handle infinite values returned by the LiDAR sensor
+        lidar_readings = [1e6 if x == float('inf') else x for x in lidar_readings]
+
+        # Convert the readings to a string and remove brackets
+        lidar_readings_str = str(lidar_readings).replace('[', '').replace(']', '')
+
+        # Split the string into separate elements and convert them to floats
+        lidar_readings_columns = [float(x) for x in lidar_readings_str.split(',')]
+
+        # Convert to the format expected by the model (2D array)
+        lidar_readings_columns = [lidar_readings_columns]
 
         # Predict velocity using the model
-        predicted_velocity = self.predict_velocity(lidar_data)
+        predicted_velocity = self.predict_velocity(lidar_readings_columns)
 
         # Publish the predicted velocity
         self.cmd_vel_publisher.publish(predicted_velocity)  # Implement this if needed
 
 
-    def predict_velocity(self, lidar_data):
+    def predict_velocity(self, lidar_readings):
         # Process the LiDAR data (reshape if necessary)
-        processed_data = lidar_data.data # TODO - logic to reshape data for model prediction
 
         # Predict velocity using the model
-        predicted_velocity = self.model.predict(processed_data)
+        predicted_velocity = self.model.predict(lidar_readings)
+
+        # Decode the predicted values
+        predicted_velocity_decoded = self.label_encoder.inverse_transform(predicted_velocity)
+        velocity_str = predicted_velocity_decoded[0]
+
+        # Convert the string to a JSON dictionary
+        velocity_dict = json.loads(velocity_str)
 
         # Create a Twist message and set predicted values
         twist_msg = Twist()
-        twist_msg.linear.x = predicted_velocity[0]
-        twist_msg.linear.y = predicted_velocity[1]
-        twist_msg.linear.z = predicted_velocity[2]
-        twist_msg.angular.x = predicted_velocity[3]
-        twist_msg.angular.y = predicted_velocity[4]
-        twist_msg.angular.z = predicted_velocity[5]
+        twist_msg.linear.x = float(velocity_dict['linear']['x'])
+        twist_msg.linear.y = float(velocity_dict['linear']['y'])
+        twist_msg.linear.z = float(velocity_dict['linear']['z'])
+        twist_msg.angular.x = float(velocity_dict['angular']['x'])
+        twist_msg.angular.y = float(velocity_dict['angular']['y'])
+        twist_msg.angular.z = float(velocity_dict['angular']['z'])
+
+        print(twist_msg)
 
         return twist_msg
 
