@@ -19,8 +19,8 @@ class Nav_Prediction(Node):
         super().__init__('nav_prediction')
 
         # Load the model
-        self.model = load("src/mlmodels/randomForestModel.joblib")
-        self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
+        self.model = load("src/mlmodels/randomForestRegressorModel.joblib")
+        # self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
 
         self.lidar_subscription = self.create_subscription(
             LaserScan,
@@ -63,13 +63,7 @@ class Nav_Prediction(Node):
 
         # Predict velocity using the model
         predicted_velocity_array = self.model.predict(lidar_readings)
-
-        # Decode the predicted values
-        # predicted_velocity_array = self.label_encoder.inverse_transform(predicted_velocity)
         predicted_velocity = predicted_velocity_array[0]
-
-        # Convert the string to a JSON dictionary
-        # velocity_dict = json.loads(velocity_str)
 
         # Create a Twist message and set predicted values
         twist_msg = Twist()

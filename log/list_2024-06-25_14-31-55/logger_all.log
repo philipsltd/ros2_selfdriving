@@ -1,0 +1,252 @@
+[0.104s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/rics/morais/ros2_selfdriving']
+[0.104s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/rics/morais/ros2_selfdriving'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7e675c63b910>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7e675c63aa70>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7e675c63aa70>>)
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.301s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rics/morais/ros2_selfdriving'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'ros'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['cmake', 'python']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'cmake'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'python'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extensions ['python_setup_py']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving) by extension 'python_setup_py'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'ros'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['cmake', 'python']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'cmake'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'python'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extensions ['python_setup_py']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags) by extension 'python_setup_py'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag) by extension 'python_setup_py'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/circular_bag_reframed) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'python'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/eight_bag_reframed) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['cmake', 'python']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'cmake'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'python'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extensions ['python_setup_py']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/bags/squared_bag_reframed) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/build) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/build) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/build) ignored
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/install) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/install) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/install) ignored
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/log) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/log) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/log) ignored
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['cmake', 'python']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'cmake'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'python'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extensions ['python_setup_py']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src) by extension 'python_setup_py'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/full_bag_nav) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/scan_today_bag) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/speed) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/generated_bags/test_bag) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/mlmodels) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/navigation_testing) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package '/home/rics/morais/ros2_selfdriving/src/navigation_testing' with type 'ros.ament_python' and name 'navigation_testing'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(/home/rics/morais/ros2_selfdriving/src/ros2bag_convert) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

@@ -19,8 +19,8 @@ class Nav_Prediction(Node):
         super().__init__('nav_prediction')
 
         # Load the model
-        self.model = load("src/mlmodels/randomForestModel.joblib")
-        self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
+        self.model = load("src/mlmodels/randomForestRegressorModel.joblib")
+        # self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
 
         self.lidar_subscription = self.create_subscription(
             LaserScan,

@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rics/morais/ros2_selfdriving/install/ros2bag_convert/lib/python3.10/site-packages",
+        "/home/rics/morais/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages",
+        "/home/rics/lou/tese/dev_ws/install/gesture_recognition/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rics/morais/ros2_selfdriving/install/ros2bag_convert/lib/python3.10/site-packages",
+        "/home/rics/morais/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages",
+        "/home/rics/lou/tese/dev_ws/install/gesture_recognition/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
