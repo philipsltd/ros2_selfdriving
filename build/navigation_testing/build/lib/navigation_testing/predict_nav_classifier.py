@@ -1,18 +1,14 @@
 # ROS2 Imports
 import rclpy
 from rclpy.node import Node
-from rclpy.serialization import serialize_message
-from sensor_msgs.msg import LaserScan  # Import PointCloud2 message\n",
-from geometry_msgs.msg import Twist  # Import geometry_msgs.msg.Twist\n",
+from sensor_msgs.msg import LaserScan  # Import LaserScan message
+from geometry_msgs.msg import Twist  # Import geometry_msgs.msg.Twist
 from sklearn.preprocessing import LabelEncoder
 
 # Regular Imports
-
 import numpy as np
-import pandas as pd
 from joblib import load
 import json
-
 
 class Nav_Prediction(Node):
     def __init__(self):
@@ -20,47 +16,47 @@ class Nav_Prediction(Node):
 
         # Load the model
         self.model = load("src/mlmodels/randomForestModel.joblib")
-        self.label_encoder = load("src/mlmodels/labelEncoder.joblib") # Load the label encoder to decode the predictions
+        self.label_encoder = load("src/mlmodels/labelEncoder.joblib")  # Load the label encoder to decode the predictions
 
         self.lidar_subscription = self.create_subscription(
             LaserScan,
             '/scan',  # Replace with your actual LiDAR topic name
             self.lidar_callback,
-            10)
+            10
+        )
 
         self.cmd_vel_publisher = self.create_publisher(
             Twist,
             '/cmd_vel',  # cmd_vel topic name
-            10)
-
-    # TODO - Callback function for LiDAR data and execution of the prediction
+            10
+        )
 
     def lidar_callback(self, msg):
-        # Process LiDAR data (extract X, Y, Z and potentially preprocess)
+        # Process LiDAR data (extract ranges and potentially preprocess)
         lidar_readings = list(msg.ranges)
 
         # Handle infinite values returned by the LiDAR sensor
         lidar_readings = [1e6 if x == float('inf') else x for x in lidar_readings]
 
-        # Convert the readings to a string and remove brackets
-        lidar_readings_str = str(lidar_readings).replace('[', '').replace(']', '')
+        # Down-sample the LiDAR readings from 1080 to 300 features
+        downsampled_readings = self.downsample_lidar_readings(lidar_readings, 300)
 
-        # Split the string into separate elements and convert them to floats
-        lidar_readings_columns = [float(x) for x in lidar_readings_str.split(',')]
-
-        # Convert to the format expected by the model (2D array)
-        lidar_readings_columns = [lidar_readings_columns]
+        # Convert the readings to a 2D array as expected by the model
+        lidar_readings_array = np.array(downsampled_readings).reshape(1, -1)
 
         # Predict velocity using the model
-        predicted_velocity = self.predict_velocity(lidar_readings_columns)
+        predicted_velocity = self.predict_velocity(lidar_readings_array)
 
         # Publish the predicted velocity
-        self.cmd_vel_publisher.publish(predicted_velocity)  # Implement this if needed
+        self.cmd_vel_publisher.publish(predicted_velocity)
 
+    def downsample_lidar_readings(self, readings, target_length):
+        factor = len(readings) / target_length
+        downsampled = [readings[int(i * factor)] for i in range(target_length)]
+        print("Downsampled LiDAR readings: ", downsampled)
+        return downsampled
 
     def predict_velocity(self, lidar_readings):
-        # Process the LiDAR data (reshape if necessary)
-
         # Predict velocity using the model
         predicted_velocity = self.model.predict(lidar_readings)
 
@@ -83,7 +79,6 @@ class Nav_Prediction(Node):
         print(twist_msg)
 
         return twist_msg
-
 
 def main(args=None):
     rclpy.init(args=args)

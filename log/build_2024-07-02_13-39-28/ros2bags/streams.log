@@ -1,0 +1,21 @@
+[1.223s] Invoking command in '/home/rics/ros2_selfdriving/src/ros2bag_convert': PYTHONPATH=/home/rics/ros2_selfdriving/build/ros2bags/prefix_override:/home/rics/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2bags build --build-base /home/rics/ros2_selfdriving/build/ros2bags/build install --record /home/rics/ros2_selfdriving/build/ros2bags/install.log --single-version-externally-managed
+[1.664s] running egg_info
+[1.665s] writing ../../build/ros2bags/ros2bag_convert.egg-info/PKG-INFO
+[1.666s] writing dependency_links to ../../build/ros2bags/ros2bag_convert.egg-info/dependency_links.txt
+[1.666s] writing entry points to ../../build/ros2bags/ros2bag_convert.egg-info/entry_points.txt
+[1.666s] writing requirements to ../../build/ros2bags/ros2bag_convert.egg-info/requires.txt
+[1.666s] writing top-level names to ../../build/ros2bags/ros2bag_convert.egg-info/top_level.txt
+[1.669s] reading manifest file '../../build/ros2bags/ros2bag_convert.egg-info/SOURCES.txt'
+[1.669s] adding license file 'LICENSE'
+[1.671s] writing manifest file '../../build/ros2bags/ros2bag_convert.egg-info/SOURCES.txt'
+[1.671s] running build
+[1.672s] running build_py
+[1.672s] running install
+[1.673s] running install_lib
+[1.675s] running install_egg_info
+[1.678s] removing '/home/rics/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert-0.1.0-py3.10.egg-info' (and everything under it)
+[1.678s] Copying ../../build/ros2bags/ros2bag_convert.egg-info to /home/rics/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages/ros2bag_convert-0.1.0-py3.10.egg-info
+[1.679s] running install_scripts
+[1.706s] Installing ros2bag-convert script to /home/rics/ros2_selfdriving/install/ros2bags/lib/ros2bag_convert
+[1.707s] writing list of installed files to '/home/rics/ros2_selfdriving/build/ros2bags/install.log'
+[1.744s] Invoked command in '/home/rics/ros2_selfdriving/src/ros2bag_convert' returned '0': PYTHONPATH=/home/rics/ros2_selfdriving/build/ros2bags/prefix_override:/home/rics/ros2_selfdriving/install/ros2bags/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2bags build --build-base /home/rics/ros2_selfdriving/build/ros2bags/build install --record /home/rics/ros2_selfdriving/build/ros2bags/install.log --single-version-externally-managed
