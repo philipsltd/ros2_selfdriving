@@ -1,0 +1,35 @@
+[0.971s] Invoking command in '/home/filipe/thesis/ros2_selfdriving/src/navigation_testing': PYTHONPATH=/home/filipe/thesis/ros2_selfdriving/build/navigation_testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation_testing build --build-base /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build install --record /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/install.log --single-version-externally-managed install_data
+[1.215s] running egg_info
+[1.235s] writing ../../build/navigation_testing/navigation_testing.egg-info/PKG-INFO
+[1.235s] writing dependency_links to ../../build/navigation_testing/navigation_testing.egg-info/dependency_links.txt
+[1.236s] writing entry points to ../../build/navigation_testing/navigation_testing.egg-info/entry_points.txt
+[1.236s] writing requirements to ../../build/navigation_testing/navigation_testing.egg-info/requires.txt
+[1.236s] writing top-level names to ../../build/navigation_testing/navigation_testing.egg-info/top_level.txt
+[1.273s] reading manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+[1.274s] writing manifest file '../../build/navigation_testing/navigation_testing.egg-info/SOURCES.txt'
+[1.274s] running build
+[1.274s] running build_py
+[1.274s] copying navigation_testing/bag_converter.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.274s] copying navigation_testing/simple_bag_recorder_lidar.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.275s] copying navigation_testing/__init__.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.275s] copying navigation_testing/predict_nav_regressor.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.275s] copying navigation_testing/simple_bag_recorder_vel.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.275s] copying navigation_testing/bag_recorder_full.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.275s] copying navigation_testing/predict_nav_classifier.py -> /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build/lib/navigation_testing
+[1.276s] running install
+[1.282s] running install_lib
+[1.300s] running install_data
+[1.301s] copying resource/navigation_testing -> /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/share/ament_index/resource_index/packages
+[1.301s] copying package.xml -> /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/share/navigation_testing
+[1.301s] running install_egg_info
+[1.321s] removing '/home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info' (and everything under it)
+[1.321s] Copying ../../build/navigation_testing/navigation_testing.egg-info to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages/navigation_testing-0.0.0-py3.10.egg-info
+[1.322s] running install_scripts
+[1.470s] Installing bag_converter script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.470s] Installing bag_recorder_full script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.471s] Installing predict_nav_classifier script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.471s] Installing predict_nav_regressor script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.471s] Installing simple_bag_recorder_lidar script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.471s] Installing simple_bag_recorder_vel script to /home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/navigation_testing
+[1.472s] writing list of installed files to '/home/filipe/thesis/ros2_selfdriving/build/navigation_testing/install.log'
+[1.496s] Invoked command in '/home/filipe/thesis/ros2_selfdriving/src/navigation_testing' returned '0': PYTHONPATH=/home/filipe/thesis/ros2_selfdriving/build/navigation_testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/filipe/thesis/ros2_selfdriving/install/navigation_testing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation_testing build --build-base /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/build install --record /home/filipe/thesis/ros2_selfdriving/build/navigation_testing/install.log --single-version-externally-managed install_data

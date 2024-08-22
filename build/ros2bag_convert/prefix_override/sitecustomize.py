@@ -1,3 +1,4 @@
 import sys
-sys.real_prefix = sys.prefix
-sys.prefix = sys.exec_prefix = '/home/filipe/ros2_selfdriving/install/ros2bag_convert'
+if sys.prefix == '/usr':
+    sys.real_prefix = sys.prefix
+    sys.prefix = sys.exec_prefix = '/home/filipe/thesis/ros2_selfdriving/install/ros2bag_convert'

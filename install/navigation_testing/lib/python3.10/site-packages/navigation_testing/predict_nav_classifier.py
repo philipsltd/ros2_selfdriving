@@ -39,7 +39,7 @@ class Nav_Prediction(Node):
         lidar_readings = [1e6 if x == float('inf') else x for x in lidar_readings]
 
         # Down-sample the LiDAR readings from 1080 to 300 features
-        downsampled_readings = self.downsample_lidar_readings(lidar_readings, 300)
+        downsampled_readings = self.downsample_lidar_readings(lidar_readings, 60)
 
         # Convert the readings to a 2D array as expected by the model
         lidar_readings_array = np.array(downsampled_readings).reshape(1, -1)
@@ -53,7 +53,6 @@ class Nav_Prediction(Node):
     def downsample_lidar_readings(self, readings, target_length):
         factor = len(readings) / target_length
         downsampled = [readings[int(i * factor)] for i in range(target_length)]
-        print("Downsampled LiDAR readings: ", downsampled)
         return downsampled
 
     def predict_velocity(self, lidar_readings):

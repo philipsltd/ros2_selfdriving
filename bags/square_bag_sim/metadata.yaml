@@ -1,0 +1,32 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 1063662794585
+  starting_time:
+    nanoseconds_since_epoch: 1723289950799877478
+  message_count: 12850
+  topics_with_message_count:
+    - topic_metadata:
+        name: /cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 7533
+    - topic_metadata:
+        name: /scan
+        type: sensor_msgs/msg/LaserScan
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 5317
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - square_bag_sim_0.db3
+  files:
+    - path: square_bag_sim_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1723289950799877478
+      duration:
+        nanoseconds: 1063662794585
+      message_count: 12850

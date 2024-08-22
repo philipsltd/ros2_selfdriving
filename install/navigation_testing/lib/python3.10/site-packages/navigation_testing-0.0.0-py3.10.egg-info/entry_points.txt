@@ -5,4 +5,3 @@ predict_nav_classifier = navigation_testing.predict_nav_classifier:main
 predict_nav_regressor = navigation_testing.predict_nav_regressor:main
 simple_bag_recorder_lidar = navigation_testing.simple_bag_recorder_lidar:main
 simple_bag_recorder_vel = navigation_testing.simple_bag_recorder_vel:main
-

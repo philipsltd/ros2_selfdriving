@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/ros2bag_convert/ros2bag_convert.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2bag_convert/ros2bag_convert.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2bag_convert/ros2bag_convert.egg-info/entry_points.txt
+writing requirements to ../../build/ros2bag_convert/ros2bag_convert.egg-info/requires.txt
+writing top-level names to ../../build/ros2bag_convert/ros2bag_convert.egg-info/top_level.txt
+reading manifest file '../../build/ros2bag_convert/ros2bag_convert.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ros2bag_convert/ros2bag_convert.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ros2bag_convert/__init__.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert
+copying ros2bag_convert/main.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert
+copying ros2bag_convert/ros2bag_convert/__init__.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert/ros2bag_convert
+copying ros2bag_convert/ros2bag_convert/read_bag.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert/ros2bag_convert
+copying ros2bag_convert/ros2bag_convert/save_csv_file.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert/ros2bag_convert
+copying ros2bag_convert/ros2bag_convert/message_converter.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert/ros2bag_convert
+copying ros2bag_convert/ros2bag_convert/json_message_converter.py -> /home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/build/lib/ros2bag_convert/ros2bag_convert
+running install
+running install_lib
+running install_egg_info
+removing '/home/filipe/thesis/ros2_selfdriving/install/ros2bag_convert/lib/python3.10/site-packages/ros2bag_convert-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/ros2bag_convert/ros2bag_convert.egg-info to /home/filipe/thesis/ros2_selfdriving/install/ros2bag_convert/lib/python3.10/site-packages/ros2bag_convert-0.1.0-py3.10.egg-info
+running install_scripts
+Installing ros2bags script to /home/filipe/thesis/ros2_selfdriving/install/ros2bag_convert/lib/ros2bag_convert
+writing list of installed files to '/home/filipe/thesis/ros2_selfdriving/build/ros2bag_convert/install.log'
