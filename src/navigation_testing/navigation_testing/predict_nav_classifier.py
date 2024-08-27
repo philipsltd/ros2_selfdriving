@@ -15,7 +15,7 @@ class Nav_Prediction(Node):
         super().__init__('nav_prediction')
 
         # Load the model
-        self.model = load("src/mlmodels/randomForestModel.joblib")
+        self.model = load("src/mlmodels/xgboostClassifierModel.joblib")
         self.label_encoder = load("src/mlmodels/labelEncoder.joblib")  # Load the label encoder to decode the predictions
 
         self.lidar_subscription = self.create_subscription(
@@ -31,29 +31,39 @@ class Nav_Prediction(Node):
             10
         )
 
+
     def lidar_callback(self, msg):
         # Process LiDAR data (extract ranges and potentially preprocess)
         lidar_readings = list(msg.ranges)
-
+        
         # Handle infinite values returned by the LiDAR sensor
         lidar_readings = [1e6 if x == float('inf') else x for x in lidar_readings]
+        
+        lidar_readings_selected = np.zeros((1, 6))
 
-        # Down-sample the LiDAR readings from 1080 to 300 features
-        downsampled_readings = self.downsample_lidar_readings(lidar_readings, 60)
+        left_readings = np.concatenate([lidar_readings[:20], lidar_readings[-20:]])
 
-        # Convert the readings to a 2D array as expected by the model
-        lidar_readings_array = np.array(downsampled_readings).reshape(1, -1)
+        min_distance = np.min(lidar_readings)
+        max_distance = np.max(lidar_readings)
+        average_distance = np.mean(lidar_readings)
+
+        front_distance = np.min(lidar_readings[int(len(lidar_readings)*0.75) - 20:int(len(lidar_readings)*0.75 + 20)])
+        left_distance = np.min(left_readings)
+        right_distance = np.min(lidar_readings[int(len(lidar_readings)*0.5) - 20:int(len(lidar_readings)*0.5 + 20)])
+
+        lidar_readings_selected[0, 0] = min_distance
+        lidar_readings_selected[0, 1] = max_distance
+        lidar_readings_selected[0, 2] = average_distance
+        lidar_readings_selected[0, 3] = front_distance
+        lidar_readings_selected[0, 4] = left_distance
+        lidar_readings_selected[0, 5] = right_distance
 
         # Predict velocity using the model
-        predicted_velocity = self.predict_velocity(lidar_readings_array)
+        predicted_velocity = self.predict_velocity(lidar_readings_selected)
 
         # Publish the predicted velocity
         self.cmd_vel_publisher.publish(predicted_velocity)
 
-    def downsample_lidar_readings(self, readings, target_length):
-        factor = len(readings) / target_length
-        downsampled = [readings[int(i * factor)] for i in range(target_length)]
-        return downsampled
 
     def predict_velocity(self, lidar_readings):
         # Predict velocity using the model
@@ -78,6 +88,7 @@ class Nav_Prediction(Node):
         print(twist_msg)
 
         return twist_msg
+
 
 def main(args=None):
     rclpy.init(args=args)
